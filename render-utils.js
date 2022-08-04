@@ -31,3 +31,6 @@ export function renderFriend(friend) {
     div.append(nameEl, emojiEl);
     return div;
 }
+
+// if input.value = '' then name = `friend ${math.ceil(math.random() * 100000000)`
+// 
