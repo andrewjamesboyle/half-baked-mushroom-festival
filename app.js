@@ -82,7 +82,7 @@ function displayFriends() {
                 friend.satisfaction++;
                 mushroomCount--;
                 displayMushrooms();
-                alert('Oh no! You over fed your friend!!');
+                alert(`Oh no! You over fed your friend ${friend.name}!!`);
             }
             displayFriends();
         });
