@@ -41,10 +41,10 @@ addMushroomButton.addEventListener('click', () => {
 });
 
 addFriendButton.addEventListener('click', () => {
-    const newFriendName = friendInputEl.value;
-    // if (friendInputEl.value === '') {
-    //     newFriendName.textContent = 'Friend';
-    // }
+    let newFriendName = friendInputEl.value;
+    if (friendInputEl.value === '') {
+        newFriendName = `Friend # ${Math.ceil(Math.random() * 1000)}`;
+    }
     
     const myNewFriend = {
         name: newFriendName,
